@@ -19,4 +19,4 @@
   - Recursion
   - Backtracking
 ## References
-[1] Data	Structures And Algorithms Made	Easy, By Narasimha	Karumanchi(https://drive.google.com/file/d/1gdU-5sKMkIa3AYCcjE7uyLj8soFW_fwl/view?usp=sharing)
+[1] [Data	Structures And Algorithms Made	Easy, By Narasimha	Karumanchi](https://drive.google.com/file/d/1gdU-5sKMkIa3AYCcjE7uyLj8soFW_fwl/view?usp=sharing)
