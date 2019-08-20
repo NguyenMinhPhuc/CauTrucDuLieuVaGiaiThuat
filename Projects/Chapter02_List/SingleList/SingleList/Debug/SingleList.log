@@ -1,0 +1,3 @@
+﻿  Exam03.cpp
+D:\Projects\Github\StructAndAlgorithm\Projects\Chapter02_List\SingleList\SingleList\Exam03.cpp(128,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+  SingleList.vcxproj -> D:\Projects\Github\StructAndAlgorithm\Projects\Chapter02_List\SingleList\Debug\SingleList.exe
