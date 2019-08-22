@@ -190,6 +190,7 @@ void TimKiemNhieuGiaTriX(LIST list)
 		cout << "Khong co gia tri can tim trong danh sach";
 	else
 		InDanhSach(listnew);
+
 }
 void main()
 {
