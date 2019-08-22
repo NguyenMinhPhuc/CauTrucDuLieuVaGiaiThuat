@@ -47,6 +47,35 @@ void ThemVaoDau(LIST &list, NODE* p)
 		list.first = p;
 	}
 }
+
+void ThemVaoMotNutSauQ(LIST &list, NODE * q, NODE*newele)
+{
+	if (q != NULL&&newele != NULL)
+	{
+		newele->link = q->link;
+		q->link = newele;
+		if (q == list.last)
+			list.last = q;
+	}
+}
+void ThemMotNutCoGiaTriXVaoSauGiaTriCD(LIST &list)
+{
+	int x, y;
+	cout << "Nhap gia tri can them: "; cin >> x;
+	cout << "Nhap gia tri can them vao sau:"; cin >> y;
+
+	NODE*p; p = list.first;
+	while (p!=NULL)
+	{
+		if (p->data == y)
+		{
+			ThemVaoMotNutSauQ(list, p, GetNode(x));
+			break;
+		}
+		p = p->link;
+	}
+
+}
 void ThemMotNODEVaoDanhSach(LIST &list,int x)
 {
 	NODE*p;
@@ -192,6 +221,74 @@ void TimKiemNhieuGiaTriX(LIST list)
 		InDanhSach(listnew);
 
 }
+
+void XoaNodeDauDanhSach(LIST &list)
+{
+	if (list.first != NULL)
+	{
+		NODE*p = list.first;
+
+		list.first = p->link;
+		if (list.first == NULL)
+			list.last;
+		free(p);
+	}
+}
+void XoaMotNutSauQ(LIST &list, NODE*q)
+{
+	if (q != NULL&&q->link != NULL)
+	{
+		NODE*p = q->link;
+
+		q->link = p->link;
+		if (p == list.last)
+			list.last = q;
+		free(p);
+	}
+}
+void XoaMotNutSauGiaTriX(LIST &list)
+{
+	int x;
+	cout << "Nhap gia tri x:"; cin >> x;
+	NODE *p = list.first;
+	while (p!=NULL)
+	{
+		if (p->data == x)
+			XoaMotNutSauQ(list, p);
+		p = p->link;
+	}
+}
+
+void XoaMotNodeCoGiaTriX(LIST &list)
+{
+	int x;
+	cout << "Nhap gia tri x:"; cin >> x;
+	NODE *p = list.first;
+	
+	while (p != NULL)
+	{
+		if (p->data == x)
+		{
+			if (p == list.first)
+			{
+				XoaNodeDauDanhSach(list);
+				break;
+			}
+			else
+			{
+				NODE*q = list.first;
+				while (q->link != p)
+				{
+					q = q->link;
+				}
+				XoaMotNutSauQ(list, q);
+				break;
+			}
+		}
+			
+		p = p->link;
+	}
+}
 void main()
 {
 	LIST list;
@@ -201,9 +298,19 @@ void main()
 	cout << endl;
 	InDanhSachGop(list,1);
 	cout << endl;
-	TimGiaTriVuaNhap(list);
+	/*TimGiaTriVuaNhap(list);
 	cout << endl;
 	TimKiemNhieuGiaTriX(list);
 
+	ThemMotNutCoGiaTriXVaoSauGiaTriCD(list);
+
+	InDanhSachGop(list, 1);*/
+
+	//XoaNodeDauDanhSach(list);
+	InDanhSachGop(list, 1); 
+
+	XoaMotNodeCoGiaTriX(list);
+
+	InDanhSachGop(list, 1);
 	system("pause");
 }
