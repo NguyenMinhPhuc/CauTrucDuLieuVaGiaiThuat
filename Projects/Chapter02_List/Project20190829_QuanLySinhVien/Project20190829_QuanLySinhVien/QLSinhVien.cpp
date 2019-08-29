@@ -18,7 +18,7 @@ void NhapMotSinhVien(SinhVien &sv,int i)
 	cout << "Nhap sinh vien thu " << i << ":";
 	
 	cin >> sv.maSo;
-	fflush(stdin);
+	cin.ignore();
 	cout << "Nhap ten sinh vien: ";
 	getline(cin, sv.hoVaTen);
 	fflush(stdin);
@@ -30,6 +30,7 @@ void NhapMotSinhVien(SinhVien &sv,int i)
 	fflush(stdin);
 	cout << "Nhap ten lop: ";
 	getline(cin, sv.lop);
+	fflush(stdin);
 }
 //SinhVien NhapMotSinhVien()
 //{
@@ -55,16 +56,10 @@ typedef Node* Nodeptr;
 Nodeptr GetNode(SinhVien sv)
 {
 	Node *p;
-	p = (Node*)malloc(sizeof(Node));
-	//p = new Node;
+	p = new Node;
 	if (p == NULL)
 		exit(1);
 	p->data = sv;
-	/*p->data.maSo = sv.maSo;
-	p->data.hoVaTen = sv.hoVaTen;
-	p->data.ngaySinh = sv.ngaySinh;
-	p->data.diaChi = sv.diaChi;
-	p->data.lop = sv.lop;*/
 	p->link = NULL;
 
 	return p;
