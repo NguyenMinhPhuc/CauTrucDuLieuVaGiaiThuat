@@ -152,6 +152,95 @@ void PrintDlist(DList dlist,bool option)
 		}
 	}
 }
+
+void XoaDauDanhSach(DList &dlist)
+{
+	DnodePtr p;
+	p = dlist.head;
+	if (p != NULL)
+	{
+		dlist.head = p->next;
+		if (p == dlist.tail)
+		{
+			dlist.tail = NULL;
+		}
+		else
+		{
+			dlist.head->pre = NULL;
+		}
+		delete p;
+	}
+}
+void XoaDuoiDanhSach(DList &dlist)
+{
+	if (dlist.head != NULL)
+	{
+		DnodePtr p;
+		p = dlist.tail;
+		dlist.tail = p->pre;
+		if (p == dlist.head)
+		{
+			dlist.head = NULL;
+		}
+		else
+		{
+			dlist.tail->next = NULL;
+		}
+		delete p;
+	}
+
+}
+void XoaTruocQ (DList &dlist, DnodePtr q)
+{
+
+}
+void XoaSauQ(DList &dlist, DnodePtr q)
+{
+	if (q != NULL)
+	{
+		DnodePtr p;
+		p = q->next;
+		if (p != NULL)
+		{
+			q->next = p->next;
+			if (p == dlist.tail)
+			{
+				dlist.tail = q;
+			}
+			else
+			{
+				p->next->pre = q;
+			}
+			delete p;
+		}
+	}
+}
+void DeleteX(DList &dlist, int x)
+{
+	DnodePtr p = dlist.head;
+	while (p != NULL)
+	{
+		if (p->data == x)
+		{
+			XoaSauQ(dlist, p->pre);
+			break;
+		}
+		p = p->next;
+	}
+}
+void DeleteSauX(DList&dlist, int x)
+{
+	DnodePtr p = dlist.head;
+	while (p != NULL)
+	{
+		if (p->data == x)
+		{
+			XoaSauQ(dlist, p);
+		}
+		p = p->next;
+	}
+	
+}
 int Menu()
 {
 	cout << endl;
@@ -159,8 +248,11 @@ int Menu()
 	cout << "| 1. Nhap danh sach            |" << endl;
 	cout << "| 2. In danh sach              |" << endl;
 	cout << "| 3. In danh sach nguoc        |" << endl;
-
-	cout << "| 7. Thoat                     |" << endl;
+	cout << "| 4. Xoa 1 phan tu dau         |" << endl;
+	cout << "| 5. Xoa 1 phan tu duoi        |" << endl;
+	cout << "| 6. Xoa 1 phan tu Sau q        |" << endl;
+	cout << "| 7. Xoa 1 phan tu x            |" << endl;
+	cout << "| 8. Thoat                     |" << endl;
 	cout << "| -----------------------------|" << endl;
 
 	int option;
@@ -168,6 +260,7 @@ int Menu()
 	cin >> option;
 	return option;
 }
+
 
 void main()
 {
@@ -188,6 +281,26 @@ void main()
 			break;
 		case 3:
 			PrintDlist(dlist,false);
+			break;
+		case 4:
+			XoaDauDanhSach(dlist);
+			PrintDlist(dlist, true);
+			break;
+		case 5:
+			XoaDuoiDanhSach(dlist);
+			PrintDlist(dlist, true);
+			break;
+		case 6:
+			int xcanxoa;
+			cout << "Nhap x: "; cin >> xcanxoa;
+			DeleteSauX(dlist, xcanxoa);
+			PrintDlist(dlist, true);
+			break;
+		case 7:
+			int xcanxoa1;
+			cout << "Nhap x: "; cin >> xcanxoa1;
+			DeleteX(dlist, xcanxoa1);
+			PrintDlist(dlist, true);
 			break;
 		default:
 			return;
