@@ -1,0 +1,5 @@
+﻿  Exam_0101_HelloWorld.cpp
+  Program.cpp
+D:\Projects\HocTap\NH20202021\SA_CauTrucDuLieu_GiaiThuat\Project_20202021\Project_20202021\Program.cpp(24,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  Project_20202021.vcxproj -> D:\Projects\HocTap\NH20202021\SA_CauTrucDuLieu_GiaiThuat\Project_20202021\Debug\Project_20202021.exe
