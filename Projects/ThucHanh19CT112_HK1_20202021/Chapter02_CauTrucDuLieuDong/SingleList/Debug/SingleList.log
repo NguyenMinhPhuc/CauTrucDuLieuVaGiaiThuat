@@ -1,0 +1,19 @@
+﻿Build started 16/09/2020 16:43:54.
+     1>Project "D:\Projects\HocTap\SA_Data Structures and Algorithms\ThucHanh19CT112_HK1_20202021\Chapter02_CauTrucDuLieuDong\SingleList\SingleList.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Program.cpp SingleList_Basic.cpp
+         SingleList_Basic.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Program.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\HocTap\SA_Data Structures and Algorithms\ThucHanh19CT112_HK1_20202021\Debug\SingleList.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\HocTap\SA_Data Structures and Algorithms\ThucHanh19CT112_HK1_20202021\Debug\SingleList.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\HocTap\SA_Data Structures and Algorithms\ThucHanh19CT112_HK1_20202021\Debug\SingleList.lib" /MACHINE:X86 Debug\Common.obj
+         Debug\Program.obj
+         Debug\SingleList_Basic.obj
+         Debug\SingleList_Extend.obj
+         SingleList.vcxproj -> D:\Projects\HocTap\SA_Data Structures and Algorithms\ThucHanh19CT112_HK1_20202021\Debug\SingleList.exe
+     1>Done Building Project "D:\Projects\HocTap\SA_Data Structures and Algorithms\ThucHanh19CT112_HK1_20202021\Chapter02_CauTrucDuLieuDong\SingleList\SingleList.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.83

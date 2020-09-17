@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chappter02", "Chappter02", "{26C80893-3A6E-44C6-98E5-835CCE5A361A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project_SingleList", "Project_SingleList\Project_SingleList.vcxproj", "{19241A32-CB4F-4D0A-88AE-A4F296DD90C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19241A32-CB4F-4D0A-88AE-A4F296DD90C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19241A32-CB4F-4D0A-88AE-A4F296DD90C7}.Debug|Win32.Build.0 = Debug|Win32
+		{19241A32-CB4F-4D0A-88AE-A4F296DD90C7}.Release|Win32.ActiveCfg = Release|Win32
+		{19241A32-CB4F-4D0A-88AE-A4F296DD90C7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19241A32-CB4F-4D0A-88AE-A4F296DD90C7} = {26C80893-3A6E-44C6-98E5-835CCE5A361A}
+	EndGlobalSection
+EndGlobal
