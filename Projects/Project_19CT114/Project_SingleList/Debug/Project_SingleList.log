@@ -1,16 +1,14 @@
-﻿Build started 14/09/2020 11:16:47.
-     1>Project "c:\Users\ASUS\OneDrive\documents\visual studio 2013\Projects\Project_19CT114\Project_SingleList\Project_SingleList.vcxproj" on node 2 (Build target(s)).
+﻿Build started 21/09/2020 09:23:17.
+     1>Project "D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Project_SingleList\Project_SingleList.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DuyetDanhSachDon.cpp
-         DuyetDanhSachDon.cpp
-     1>c:\users\asus\onedrive\documents\visual studio 2013\projects\project_19ct114\project_singlelist\duyetdanhsachdon.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>c:\users\asus\onedrive\documents\visual studio 2013\projects\project_19ct114\project_singlelist\duyetdanhsachdon.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>c:\users\asus\onedrive\documents\visual studio 2013\projects\project_19ct114\project_singlelist\duyetdanhsachdon.cpp(30): warning C4551: function call missing argument list
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt QuanLySinhVien.cpp
+         QuanLySinhVien.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\asus\onedrive\documents\visual studio 2013\Projects\Project_19CT114\Debug\Project_SingleList.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\asus\onedrive\documents\visual studio 2013\Projects\Project_19CT114\Debug\Project_SingleList.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\asus\onedrive\documents\visual studio 2013\Projects\Project_19CT114\Debug\Project_SingleList.lib" /MACHINE:X86 Debug\DuyetDanhSachDon.obj
-         Project_SingleList.vcxproj -> c:\users\asus\onedrive\documents\visual studio 2013\Projects\Project_19CT114\Debug\Project_SingleList.exe
-     1>Done Building Project "c:\Users\ASUS\OneDrive\documents\visual studio 2013\Projects\Project_19CT114\Project_SingleList\Project_SingleList.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_SingleList.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_SingleList.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_SingleList.lib" /MACHINE:X86 Debug\DuyetDanhSachDon.obj
+         Debug\QuanLySinhVien.obj
+         Project_SingleList.vcxproj -> D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_SingleList.exe
+     1>Done Building Project "D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Project_SingleList\Project_SingleList.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.74
+Time Elapsed 00:00:00.87

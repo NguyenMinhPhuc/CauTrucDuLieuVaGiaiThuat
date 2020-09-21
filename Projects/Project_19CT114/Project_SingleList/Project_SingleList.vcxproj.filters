@@ -18,5 +18,8 @@
     <ClCompile Include="DuyetDanhSachDon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="QuanLySinhVien.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
