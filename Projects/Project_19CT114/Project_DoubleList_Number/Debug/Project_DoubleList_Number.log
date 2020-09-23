@@ -1,0 +1,14 @@
+﻿Build started 21/09/2020 09:55:16.
+     1>Project "D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Project_DoubleList_Number\Project_DoubleList_Number.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DoubleList_Number.cpp
+         DoubleList_Number.cpp
+     1>d:\projects\hoctap\sa_data structures and algorithms\cautrucdulieuvagiaithuat\projects\project_19ct114\project_doublelist_number\doublelist_number.cpp(27): warning C4715: 'GetNode' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_DoubleList_Number.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_DoubleList_Number.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_DoubleList_Number.lib" /MACHINE:X86 Debug\DoubleList_Number.obj
+         Project_DoubleList_Number.vcxproj -> D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Debug\Project_DoubleList_Number.exe
+     1>Done Building Project "D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\Project_DoubleList_Number\Project_DoubleList_Number.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46
