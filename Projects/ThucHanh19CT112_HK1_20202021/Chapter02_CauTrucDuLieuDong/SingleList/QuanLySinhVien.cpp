@@ -119,13 +119,13 @@ void Print(LIST l)
 }
 //Phương thức menu chọn chức năng
  int MenuSingleList_Extend(){
-	cout << "=========================" << endl;
-	cout << "--- SINGLELIST_EXTEND ---" << endl;
-	cout << "=========================" << endl;
+	cout << "===========================" << endl;
+	cout << "--- Student Managerment ---" << endl;
+	cout << "===========================" << endl;
 
 	cout << "1. Init List" << endl;
-	cout << "2. Create list number" << endl;
-	cout << "3. Print list number" << endl;
+	cout << "2. Print list Student" << endl;
+	cout << "3. Search by ID" << endl;
 	cout << "4. Exit" << endl;
 	int option;
 	cout << "Select Function: ";
