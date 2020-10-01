@@ -117,6 +117,37 @@ void Print(LIST l)
 		p = p->link;
 	}
 }
+dataType Search(LIST l)
+{
+	ptrNode p = l.first;
+	int i = 0;
+	cout << "Nhap MaSV:";
+	int MaSV;
+	cin >> MaSV;
+	while (p != NULL)
+	{
+		if (p->data.ID == MaSV)
+			return p->data;
+		p = p->link;
+	}
+}
+LIST SearchMuti(LIST l)
+{
+	LIST result;
+	Init(result);
+	ptrNode p = l.first;
+	int i = 0;
+	cout << "Nhap name:";
+	string name;
+	getline(cin, name);
+	while (p != NULL)
+	{
+		if (p->data.Name == name)
+			InsertList(result, p->data,true);
+		p = p->link;
+	}
+	return result;
+}
 //Phương thức menu chọn chức năng
  int MenuSingleList_Extend(){
 	cout << "===========================" << endl;
