@@ -102,9 +102,9 @@ void ThemVaoMotNodeSauQ(DLIST &dlist, DNODE *q, DNODE *newDnode)
 		newDnode->next = p;//1
 		newDnode->pre = q;//2
 		q->next = newDnode;//3
-		if (p != NULL)
+		if (q!=dlist.tail)
 			p->pre = newDnode;//4
-		if (q == dlist.tail)
+		else
 			dlist.tail = newDnode;//5
 	}
 }
@@ -115,11 +115,76 @@ void ThemVaoMotNodeTruocQ(DLIST &dlist, DNODE *q, DNODE *newDnode)
 	{
 		newDnode->pre = p;//1
 		newDnode->next = q;//2
-		q->pre = newDnode;//3
-		if (p != NULL)
-			p->next = newDnode;//4
-		if (q == dlist.head)
+		q->pre = newDnode;//4
+		if (q!=dlist.head)
+			p->next = newDnode;//3
+		else
 			dlist.head = newDnode;//5
+	}
+}
+int XoaMotNodeDauDanhSach(DLIST& dlist)
+{
+	DNODE* p;
+	dataType x=0;
+	if (dlist.head != NULL)//danh sach khac rong
+	{
+		p = dlist.head;//1
+		x = p->data;
+		dlist.head = p->next;//2
+		delete p;
+		if (dlist.head == NULL){
+			dlist.tail = NULL;
+		}
+		else{
+			dlist.head->pre = NULL;
+		}
+	}
+	return x;
+}
+dataType XoaMotNodeCuoiDanhDanh(DLIST& dlist)
+{
+	DNODE* p;
+	dataType x = 0;
+	if (dlist.tail != NULL)
+	{
+		p = dlist.tail;
+		x = p->data;
+		dlist.tail = p->pre;
+		delete p;
+		if (dlist.tail == NULL)
+			dlist.head = NULL;
+		else
+			dlist.tail->next = NULL;
+	}
+	return x;
+} 
+void XoaMotNodeSauQ(DLIST& dlist, DNODE* q)
+{
+	if (q != NULL)
+	{
+		DNODE* p = q->next;
+		if (p != NULL)
+		{
+			q->next = p->next;//1
+			if (p != dlist.tail)
+			{
+				p->next->pre = q;
+			}
+			else{
+				dlist.tail = q;
+			}
+			delete p;
+		}
+	}
+}
+void XoaGiaTriX(DLIST& dlist, dataType x)
+{
+	DNODE* p = dlist.head;
+	while (p != NULL)
+	{
+		if (p->data == x)
+			XoaMotNodeSauQ(dlist, p->pre);
+		p = p->next;
 	}
 }
 void main()

@@ -165,11 +165,12 @@ void TachChanLe(DLIST l, DLIST& lChan, DLIST& lLe)
 }
 void main()
 {
+	const bool IS_FIRST = true;
 	DLIST l;
 	DLIST lChan, lLe;
 	InitDlist(lChan);
 	InitDlist(lLe);
-	const bool IS_FIRST = true;
+
 	InitDlist(l);
 	CreateList(l, IS_FIRST);
 	PrintDList(l, true);
