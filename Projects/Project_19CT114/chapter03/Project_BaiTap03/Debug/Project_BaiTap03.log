@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\chapter03\Project_BaiTap03\Source.cpp(200,4): error C2561: 'main': function must return a value
+D:\Projects\HocTap\SA_Data Structures and Algorithms\CauTrucDuLieuVaGiaiThuat\Projects\Project_19CT114\chapter03\Project_BaiTap03\Source.cpp(176): message : see declaration of 'main'
